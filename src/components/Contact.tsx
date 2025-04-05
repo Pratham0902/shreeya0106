@@ -61,8 +61,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-800">Email</h4>
-                      <a href="mailto:shreeya.santhoshi.srinath@gmail.com" className="text-tech-blue hover:underline">
-                        shreeya.santhoshi.srinath@gmail.com
+                      <a href="mailto:shreeyasanthoshi.ec23@bmsce.ac.in" className="text-tech-blue hover:underline">
+                        shreeyasanthoshi.ec23@bmsce.ac.in
                       </a>
                     </div>
                   </div>
@@ -124,7 +124,7 @@ const Contact = () => {
                       <Github size={20} />
                     </a>
                     <a 
-                      href="mailto:shreeya.santhoshi.srinath@gmail.com" 
+                      href="mailto:shreeyasanthoshi.ec23@bmsce.ac.in" 
                       className="bg-tech-teal text-white p-2 rounded-full hover:bg-opacity-90 transition-all"
                       aria-label="Email"
                     >
