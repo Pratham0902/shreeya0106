@@ -22,10 +22,12 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && sectionRef.current) {
           setTimeout(() => {
-            entry.target.classList.add('animate-' + animation);
-            entry.target.style.opacity = '1';
+            if (sectionRef.current) {
+              entry.target.classList.add('animate-' + animation);
+              sectionRef.current.style.opacity = '1';
+            }
           }, delay);
           observer.unobserve(entry.target);
         }
