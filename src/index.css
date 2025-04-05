@@ -5,44 +5,44 @@
 
 @layer base {
   :root {
-    --background: 220 33% 98%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 201 96% 32%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 72% 51%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 265 89% 78%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 80%;
 
-    --accent: 262 83% 58%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 0 72% 51%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 72% 51%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 0 72% 51%;
   }
 }
 
@@ -67,7 +67,7 @@
 
 @layer components {
   .gradient-heading {
-    @apply bg-gradient-to-r from-tech-teal via-tech-blue to-tech-purple bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-red-500 via-red-600 to-white bg-clip-text text-transparent;
   }
   
   .section-heading {
@@ -75,23 +75,23 @@
   }
 
   .section-subheading {
-    @apply text-xl md:text-2xl font-semibold mb-4 text-tech-blue;
+    @apply text-xl md:text-2xl font-semibold mb-4 text-red-500;
   }
 
   .nav-link {
-    @apply px-4 py-2 hover:text-tech-teal transition-colors duration-300;
+    @apply px-4 py-2 hover:text-red-500 transition-colors duration-300;
   }
 
   .nav-link.active {
-    @apply text-tech-purple font-medium;
+    @apply text-red-500 font-medium;
   }
 
   .project-card {
-    @apply bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100;
+    @apply bg-card p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-red-900/30;
   }
 
   .tech-tag {
-    @apply inline-block bg-muted text-tech-purple px-2 py-1 rounded-md text-sm mr-2 mb-2;
+    @apply inline-block bg-muted text-red-400 px-2 py-1 rounded-md text-sm mr-2 mb-2;
   }
 
   .animated-section {

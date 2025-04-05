@@ -17,8 +17,8 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="relative">
-      <div className="absolute inset-0 bg-[url('/lovable-uploads/f6823ede-d97f-4f5b-8d0a-dd3039c5f5d7.png')] opacity-[0.02] pointer-events-none"></div>
+    <div className="relative bg-black text-white">
+      <div className="absolute inset-0 bg-[url('/lovable-uploads/f6823ede-d97f-4f5b-8d0a-dd3039c5f5d7.png')] opacity-[0.03] pointer-events-none"></div>
       <Header />
       <main>
         <Hero />
