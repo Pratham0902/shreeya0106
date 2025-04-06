@@ -70,12 +70,19 @@ const Hero = () => {
           
           <AnimatedSection animation="slide-in-right" className="hidden md:block">
             <div className="relative p-8">
-              <div className="absolute inset-0 bg-gradient-to-tr from-red-600/30 to-red-900/10 rounded-xl rotate-3 blur-sm"></div>
-              <div className="relative bg-gray-900/70 backdrop-blur-sm p-6 rounded-lg shadow-xl border border-red-900/30 transform -rotate-2 transition-all duration-500 hover:rotate-0 hover:border-red-500/50 hover:shadow-red-900/30">
+              {/* Replace the square box with a more aesthetic design */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-red-600/30 to-red-900/10 rounded-2xl blur-sm transform rotate-3"></div>
+              <div className="absolute inset-0 bg-gradient-to-bl from-red-500/20 to-transparent rounded-2xl blur-md transform -rotate-2"></div>
+              
+              <div className="relative glassmorphism p-6 rounded-2xl border border-red-500/30 backdrop-blur-sm bg-black/40 shadow-[0_0_15px_rgba(220,38,38,0.3)] hover:shadow-[0_0_25px_rgba(220,38,38,0.4)] transition-all duration-500">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="font-bold text-white">Shreeya S. Srinath</h3>
-                  <span className="px-3 py-1 bg-green-900/50 text-green-400 rounded-full text-sm animate-pulse">Available</span>
+                  <div className="flex items-center gap-3">
+                    <div className="h-3 w-3 bg-red-500 rounded-full animate-pulse"></div>
+                    <h3 className="font-bold text-white">Shreeya S. Srinath</h3>
+                  </div>
+                  <span className="px-3 py-1 bg-gradient-to-r from-green-900/50 to-green-700/30 text-green-400 rounded-full text-sm animate-pulse border border-green-500/30">Available</span>
                 </div>
+                
                 <div className="space-y-3 text-sm">
                   <div className="flex group transition-all duration-300 hover:translate-x-1">
                     <span className="font-medium w-24 text-gray-400 group-hover:text-red-400 transition-colors duration-300">Email:</span>
@@ -98,6 +105,7 @@ const Hero = () => {
                     <span className="text-gray-200 group-hover:text-white transition-colors duration-300">Bangalore, Karnataka</span>
                   </div>
                 </div>
+                
                 <div className="mt-6 pt-4 border-t border-gray-800">
                   <h4 className="font-medium text-gray-200 mb-2">Core Skills:</h4>
                   <div className="flex flex-wrap gap-2">

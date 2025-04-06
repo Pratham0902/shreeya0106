@@ -38,7 +38,10 @@ export const setupScrollAnimation = () => {
     parallaxElements.forEach((element) => {
       const speed = element.getAttribute('data-speed') || '0.5';
       const yPos = -scrollPosition * parseFloat(speed);
-      element.style.transform = `translateY(${yPos}px)`;
+      // Fix the TypeScript error by checking if element is HTMLElement
+      if (element instanceof HTMLElement) {
+        element.style.transform = `translateY(${yPos}px)`;
+      }
     });
   });
 
@@ -111,6 +114,14 @@ const addAnimationStyles = () => {
     .text-reveal.visible span {
       transform: translateY(0);
       opacity: 1;
+    }
+    
+    /* Glassmorphism effect */
+    .glassmorphism {
+      background-color: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
   `;
   document.head.appendChild(styleTag);
