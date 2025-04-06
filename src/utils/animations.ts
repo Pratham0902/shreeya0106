@@ -60,6 +60,12 @@ export const setupScrollAnimation = () => {
 
   // Add floating animation to specified elements
   setupFloatingAnimation();
+  
+  // Add wave animations for the education timeline
+  setupWaveAnimations();
+  
+  // Add glow effect to elements with text-gradient class
+  setupGlowEffects();
 };
 
 const setupFloatingAnimation = () => {
@@ -76,6 +82,37 @@ const setupFloatingAnimation = () => {
   });
 };
 
+const setupWaveAnimations = () => {
+  const waveElements = document.querySelectorAll('.wave-animation');
+  
+  waveElements.forEach((element) => {
+    // Add wave effect on hover
+    element.addEventListener('mouseenter', () => {
+      element.classList.add('animate-wave');
+    });
+    
+    element.addEventListener('mouseleave', () => {
+      setTimeout(() => {
+        element.classList.remove('animate-wave');
+      }, 1000); // Remove after animation completes
+    });
+  });
+};
+
+const setupGlowEffects = () => {
+  const glowElements = document.querySelectorAll('.text-gradient');
+  
+  glowElements.forEach((element) => {
+    element.addEventListener('mouseenter', () => {
+      element.classList.add('text-glow');
+    });
+    
+    element.addEventListener('mouseleave', () => {
+      element.classList.remove('text-glow');
+    });
+  });
+};
+
 // Add this to the CSS using a style tag since we can't modify the CSS file directly
 const addAnimationStyles = () => {
   const styleTag = document.createElement('style');
@@ -83,6 +120,22 @@ const addAnimationStyles = () => {
     @keyframes floating {
       0% { transform: translateY(0); }
       100% { transform: translateY(-10px); }
+    }
+    
+    @keyframes wave {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    
+    .animate-wave::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, rgba(220, 38, 38, 0.7), transparent);
+      animation: wave 2s ease-in-out infinite;
     }
     
     .interactive {
@@ -114,6 +167,15 @@ const addAnimationStyles = () => {
     .text-reveal.visible span {
       transform: translateY(0);
       opacity: 1;
+    }
+    
+    /* Glow effect for text-gradient */
+    .text-gradient {
+      transition: text-shadow 0.3s ease;
+    }
+    
+    .text-gradient.text-glow {
+      text-shadow: 0 0 10px rgba(220, 38, 38, 0.7);
     }
     
     /* Glassmorphism effect */
