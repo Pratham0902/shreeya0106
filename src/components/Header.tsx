@@ -62,8 +62,19 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <h1 className="text-xl md:text-2xl font-bold gradient-heading">
-            Shreeya S. Srinath
+          <h1 className="relative text-xl md:text-2xl font-bold overflow-hidden">
+            <span className="inline-block relative">
+              <span className="relative z-10 bg-gradient-to-r from-red-400 via-red-500 to-white bg-clip-text text-transparent 
+                transform transition-all duration-500 hover:scale-105 tracking-wider">
+                Shreeya
+              </span>
+              <span className="relative z-10 text-red-200 italic px-1 font-light">S.</span>
+              <span className="relative z-10 bg-gradient-to-l from-red-400 via-red-500 to-white bg-clip-text text-transparent 
+                transform transition-all duration-500 hover:scale-105 tracking-wide">
+                Srinath
+              </span>
+              <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-red-500 to-transparent transform scale-x-0 transition-transform duration-500 origin-center group-hover:scale-x-100"></span>
+            </span>
           </h1>
         </div>
 
@@ -104,7 +115,7 @@ const Header = () => {
             <Linkedin size={20} />
           </a>
           <a 
-            href="mailto:shreeya.santhoshi.srinath@gmail.com" 
+            href="mailto:shreeyasanthoshi.ec23@bmsce.ac.in" 
             aria-label="Email"
             className="text-gray-600 hover:text-tech-teal transition-colors"
           >
@@ -158,7 +169,7 @@ const Header = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="mailto:shreeya.santhoshi.srinath@gmail.com" 
+                href="mailto:shreeyasanthoshi.ec23@bmsce.ac.in" 
                 aria-label="Email"
                 className="text-gray-600 hover:text-tech-teal transition-colors"
               >

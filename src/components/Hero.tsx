@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
@@ -42,8 +43,14 @@ const Hero = () => {
             <div className="inline-block relative mb-3">
               <span className="text-red-500 font-medium text-lg relative z-10 before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:bg-red-500 before:transition-all before:duration-500 hover:before:w-full">Hello, I'm</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 gradient-heading transition-all duration-500 transform hover:scale-[1.01] hover:text-red-400">
-              Shreeya Santhoshi Srinath
+            <h1 className="relative mb-4 tracking-wider">
+              <span className="inline-block text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-red-400 via-red-600 to-white bg-clip-text text-transparent transition-all duration-500 transform hover:scale-[1.01]">
+                Shreeya
+              </span>
+              <span className="inline-block text-4xl md:text-5xl lg:text-6xl font-light italic px-2 text-red-200">S.</span>
+              <span className="inline-block text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-l from-red-400 via-red-600 to-white bg-clip-text text-transparent transition-all duration-500 transform hover:scale-[1.01]">
+                Srinath
+              </span>
             </h1>
             <h2 className="text-xl md:text-2xl mb-6 text-gray-300 transition-all duration-500 transform hover:translate-x-1 hover:text-white">
               Electronics and Communication Engineer
