@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import AnimatedSection from './AnimatedSection';
 import { Mail, Phone, Github, Linkedin, Send } from 'lucide-react';
@@ -68,8 +67,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-white">Email</h4>
-                      <a href="mailto:shreeyasanthoshi.ec23@gmail.com" className="text-red-400 hover:underline">
-                        shreeyasanthoshi.ec23@gmail.com
+                      <a href="mailto:shreeyasanthoshi.ec23@bmsce.ac.in" className="text-red-400 hover:underline">
+                        shreeyasanthoshi.ec23@bmsce.ac.in
                       </a>
                     </div>
                   </div>
@@ -131,7 +130,7 @@ const Contact = () => {
                       <Github size={20} />
                     </a>
                     <a 
-                      href="mailto:shreeyasanthoshi.ec23@gmail.com" 
+                      href="mailto:shreeyasanthoshi.ec23@bmsce.ac.in" 
                       className="bg-red-600/30 text-white p-2 rounded-full hover:bg-red-600 transition-all duration-300"
                       aria-label="Email"
                     >

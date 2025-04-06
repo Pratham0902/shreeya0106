@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
@@ -70,7 +69,6 @@ const Hero = () => {
           
           <AnimatedSection animation="slide-in-right" className="hidden md:block">
             <div className="relative p-8">
-              {/* Replace the square box with a more aesthetic design */}
               <div className="absolute inset-0 bg-gradient-to-tr from-red-600/30 to-red-900/10 rounded-2xl blur-sm transform rotate-3"></div>
               <div className="absolute inset-0 bg-gradient-to-bl from-red-500/20 to-transparent rounded-2xl blur-md transform -rotate-2"></div>
               
@@ -86,7 +84,7 @@ const Hero = () => {
                 <div className="space-y-3 text-sm">
                   <div className="flex group transition-all duration-300 hover:translate-x-1">
                     <span className="font-medium w-24 text-gray-400 group-hover:text-red-400 transition-colors duration-300">Email:</span>
-                    <span className="text-gray-200 group-hover:text-white transition-colors duration-300">shreeyasanthoshi.ec23@gmail.com</span>
+                    <span className="text-gray-200 group-hover:text-white transition-colors duration-300">shreeyasanthoshi.ec23@bmsce.ac.in</span>
                   </div>
                   <div className="flex group transition-all duration-300 hover:translate-x-1">
                     <span className="font-medium w-24 text-gray-400 group-hover:text-red-400 transition-colors duration-300">LinkedIn:</span>
